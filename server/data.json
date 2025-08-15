@@ -1,0 +1,27 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Electronics",
+      "subcategories": [
+        {
+          "id": "1-1",
+          "name": "Smartphones",
+          "brands": [
+            {
+              "id": "1-1-1",
+              "name": "Brand A",
+              "product": {
+                "id": "1-1-1",
+                "name": "Phone X",
+                "sku": "sku-001",
+                "price": 499,
+                "description": "High-end smartphone"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
