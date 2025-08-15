@@ -5,9 +5,9 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("/data.json");
+      const res = await fetch("http://localhost:5000/categories");
       const data = await res.json();
-      setCategories(data.categories);
+      setCategories(data);
     } catch (err) {
       console.error(err);
     }
