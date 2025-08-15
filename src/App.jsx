@@ -5,7 +5,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch("/data.json"); // Vercel deploy হলে public folder থেকে
+      const res = await fetch("server/data.json"); // Vercel deploy হলে public folder থেকে
       const data = await res.json();
       setCategories(data.categories);
     } catch (err) {
