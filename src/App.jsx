@@ -5,7 +5,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const res = await fetch(`${process.env.PUBLIC_URL}/data.json`);
+      const res = await fetch("/data.json");
       const data = await res.json();
       setCategories(data.categories);
     } catch (err) {
